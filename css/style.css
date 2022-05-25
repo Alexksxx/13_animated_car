@@ -156,7 +156,7 @@ bottom: 30px;
 		transform: translateX(0px);
 	}
 	100%{
-		transform: translateX(1920px);
+		transform: translateX(2050px);
 	}
 }
 .bush {
