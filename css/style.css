@@ -1,0 +1,214 @@
+@import "null.css";
+@import "car.css";
+.background {
+	width: 1920px;
+	height: 720px;
+	background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(86,211,221,1) 100%);
+	position: relative;
+}
+
+.background__road {
+	background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(29,29,29,1) 72%, rgba(74,74,74,1) 94%);
+	width: 100%;
+	height: 200px;
+	padding: 10px 0px 10px 0px;
+	position: absolute;
+	z-index: 10;
+	bottom: 50px;
+	left: 0px;
+}
+.background__line {
+	width: 100%;
+	background-color: #fff;
+}
+.background__line_far {
+	height: 3px;
+}
+.background__line_near {
+height: 15px;
+position: absolute;
+bottom: 30px;
+}
+.background__dashs{
+	width: 100%;
+	position: absolute;
+	bottom: 125px;
+	left: 0px;
+	animation: move 1.3s linear infinite;
+}
+@keyframes move{
+	0%{
+	transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+}
+.background__body-dash{
+	perspective: 200px;
+	display: inline-block;
+}
+.background__dash {
+	height: 30px;
+	width: 50px;
+	background-color: #fff;
+	transform: rotateX(80deg);
+}
+.background__ground {
+	z-index: 9;
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(0deg, rgba(128,74,10,1) 6%, rgba(138,218,105,1) 49%, rgba(45,167,31,1) 100%);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.background__tree {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 130px;
+	left: 0px;
+	animation: treemove 30s linear infinite;
+}
+.tree{
+	width: 150px;
+	height: 200px;
+}
+.tree:nth-child(2){
+	transform: scale(0.7);
+	position: absolute;
+	top: 20px;
+	left: 80px;
+}
+@keyframes treemove{
+	0%{
+		transform: translateX(-200px);
+	}
+	100%{
+		transform: translateX(1920px);
+	}
+}
+.tree__trunk {
+	height: 100px;
+	width: 30px;
+	background-color: rgb(157, 96, 27);
+	position: absolute;
+	bottom: 0px;
+	left: 60px;
+}
+.tree__crown {
+	height: 150px;
+	width: 120px;
+	position: absolute;
+	bottom: 70px;
+	left: 25px;
+}
+.three__element {
+	background-color: green;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.three__element:nth-child(1) {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+}
+.three__element:nth-child(2) {
+	position: absolute;
+	bottom: 7px;
+	left: 40px;
+}
+.three__element:nth-child(3) {
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+}
+.three__element:nth-child(4) {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 33px;
+	left: 45px;
+}
+.three__element:nth-child(5) {
+	height: 70px;
+	width: 60px;
+	position: absolute;
+	bottom: 60px;
+	left: 20px;
+}
+.background__bush {
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	z-index: 11;
+	top: 255px;
+	left: -500px;
+	animation: bushmove 30s linear infinite ;
+	animation-delay: 12s;
+}
+@keyframes bushmove {
+	0%{
+		transform: translateX(0px);
+	}
+	100%{
+		transform: translateX(1920px);
+	}
+}
+.bush {
+	width: 60px;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.bush:nth-child(2){
+	top: 20px;
+	left: 60px;
+}
+.bush:nth-child(3){
+	top: 80px;
+	left: 250px;
+}
+.bush:nth-child(4){
+	top: 40px;
+	left: 430px;
+}
+.bush__element {
+	background-color: rgb(15, 129, 59);
+	width: 35px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+}
+.bush__element:nth-child(1){
+	left: 3px;
+	top: 0px;
+}
+.bush__element:nth-child(2){
+	left: 23px;
+	top: 3px;
+}
+.bush__element:nth-child(3){
+	left: 0px;
+	bottom: 14px;
+	transform: scale(1.3);
+}
+.bush__element:nth-child(4){
+	left: 23px;
+	bottom: 16px;
+}
+.bush__element:nth-child(5){
+	border-radius: 0%;
+	height: 30px;
+	width: 10px;
+	background-color: rgb(158, 110, 48);
+	z-index: 1;
+	left: 25px;
+	bottom: 0px;
+}
